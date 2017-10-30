@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" >
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<title>A simple H5 & AngularJS Responsive Page Demo</title>
+	 
+	<link rel="stylesheet" href="css/cpSpace.css">     
+	
+	
+	<!--[if lt IE 9]>
+	　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+	<main class="main">
+		<article ng-repeat="item in items" class="section">
+			<head id="header">
+				<a href="" alert="下载" title="下载">
+					<span id="logo" class="float-left"><img src="{{item.icon}}" alt="{{item.name}}"></span>
+					<span id="name" class="float-left">{{item.name }}</span>
+					<span id="download" class="float-right">{{item.download || "Download" }}</span>
+				</a>
+			</head>
+			
+			<div class="clear-both border-bottom"></div>
+
+			<p id="description" class="float-left">
+				{{item.description}}
+			</p>			
+		</article>		  
+	</main>
+	<script src="js/angular.min.js" type="text/javascript"></script>
+	<script src="js/cp_model.js" type="text/javascript"> </script>
+</body>
+</html>

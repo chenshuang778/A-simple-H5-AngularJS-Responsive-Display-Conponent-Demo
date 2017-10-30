@@ -1,0 +1,56 @@
+
+/** Page default styles
+*/
+main, .main{
+	margin: auto;
+	padding:5%px;
+	font-size: 1em;
+}
+section, .section{
+	padding: 5%;
+	display: inline-block;
+	clear: both;
+	margin-bottom: 20px;
+	width: 90%;
+	background: #fff;
+	border:1px solid #ddd;
+	border-radius: 3px;
+	box-shadow: 0 15px 10px -15px rgba(0,0,0,0.4);
+}
+
+/** Common styles
+*/
+.float-left{
+	float:left;
+}
+.float-right{
+	float:right;
+}
+.clear-both{
+	clear:both;			
+}
+.border-bottom{
+	height: 5px;
+	margin: 5px 0px 5px 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+/** Page styles
+*/
+#logo{
+	
+	width: 50px;
+}
+#logo img{
+	width: 50px;
+}
+
+#name{			 
+	margin-left: 10px;
+	line-height: 50px;
+}
+#download{			 
+	line-height: 50px;
+}
+
+
